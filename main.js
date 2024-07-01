@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const reserva = document.getElementById('reserva');
-    const confirmationMessage = document.getElementById('confirmationMessage');
-    const confirmationDetails = document.getElementById('confirmationDetails');
+    const mensajeConfirmacion = document.getElementById('mensajeConfirmacion');
+    const confirmacionDetalles = document.getElementById('confirmacionDetalles');
 
     reserva.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
             Tipo de Habitación: ${roomType}
         `;
 
-        confirmationDetails.innerHTML = DetallesReserva;
-        confirmationMessage.style.display = 'block';
+        confirmacionDetalles.innerHTML = DetallesReserva;
+        mensajeConfirmacion.style.display = 'block';
 
         // Resetear el formulario
         reserva.reset();
